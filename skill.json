@@ -1,0 +1,23 @@
+{
+  "name": "genpark-agent-cryptographic-audit-trail-merkle-sealer-skill",
+  "version": "1.0.0",
+  "description": "Agent cryptographic audit trail Merkle sealer with tamper-evident SHA-256 tree generation, logarithmic inclusion proofs, and verifiable integrity checks.",
+  "tools": [
+    {
+      "name": "record_event",
+      "description": "Append an agent interaction or tool call to the Merkle audit trail."
+    },
+    {
+      "name": "compute_merkle_root",
+      "description": "Compute the current cryptographic root hash of all recorded events."
+    },
+    {
+      "name": "generate_inclusion_proof",
+      "description": "Generate a cryptographic audit proof path for a specific event."
+    },
+    {
+      "name": "verify_proof",
+      "description": "Verify an inclusion proof against an expected Merkle root."
+    }
+  ]
+}
